@@ -83,7 +83,7 @@ Some basic features are:
    Now that we're done setting up our coding environment, we should probably start using our application now.
    We will run our Django migrations.
 
-6. **Run Migrations**:
+5. **Run Migrations**:
 
    ```bash
    uv python manage.py makemigrations
@@ -97,13 +97,13 @@ Some basic features are:
    python manage.py migrate
    ```
 
-7. **Start the Development Server**:
+6. **Start the Development Server**:
 
    ```bash
    python manage.py runserver
    ```
 
-8. **Access the Application**:
+7. **Access the Application**:
    - Open a browser and navigate to `http://127.0.0.1:8000`.(Duh!)
 
 ---
