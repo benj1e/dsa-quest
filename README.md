@@ -32,8 +32,8 @@ This project is a Django web application that helps users enhance users data str
 1. **Clone the Repository**:
 
    ```bash
-   git clone https://github.com/your-repo/leetcode-dsa-solver.git
-   cd leetcode-dsa-solver
+   git clone https://github.com/benj1e/dsa-quest.git
+   cd dsa-quest
    ```
 
 2. **Set Up a Virtual Environment**:
