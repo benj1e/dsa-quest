@@ -86,8 +86,8 @@ Some basic features are:
 5. **Run Migrations**:
 
    ```bash
-   uv python manage.py makemigrations
-   uv python manage.py migrate
+   uv run manage.py makemigrations
+   uv run manage.py migrate
    ```
 
    **or**
@@ -101,6 +101,12 @@ Some basic features are:
 
    ```bash
    python manage.py runserver
+   ```
+
+   **or**
+
+   ```bash
+   uv run manage.py runserver
    ```
 
 7. **Access the Application**:
