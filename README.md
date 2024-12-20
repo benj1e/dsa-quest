@@ -8,9 +8,10 @@ That's why I have created a tool to help you practice questions in the worst way
 
 ## Overview 👨‍🏫
 
-This project is a Django web application that helps users enhance their data structure and algorithm (DSA) skills using uv (A Python package installer and resolver). 
+This project is a Django web application that helps users enhance their data structure and algorithm (DSA) skills using uv (A Python package installer and resolver).
 
 Some basic features are:
+
 - Select a data structure to receive daily quests on.
 - Add Leetcode questions either by adding the question directly or using a link
 - Customize notification frequency and the number of questions generated per interval.
@@ -36,24 +37,28 @@ Some basic features are:
    git clone https://github.com/benj1e/dsa-quest.git
    cd dsa-quest
    ```
+
 2. **Set up Coding Environment**:
    Since I am using uv instead of pip, you should (will) too!
+
    ```bash
    pip install uv # You should probably install uv, it's really fast (trust me bro.)
    uv sync
    ```
+
    Once you run `uv sync` it will create a `.venv` folder and install all dependencies for you.
 
    So you should see an output like this:
+
    ```bash
    Using CPython 3.12.2 interpreter at: path\to\your\python\interpreter
    Creating virtual environment at: .venv
 
    # The packages that were installed (it's faster than pip btw)
    ```
-   
+
 3. **Set Up a Virtual Environment**:
-   
+
    ```bash
    python -m venv venv
    source venv/bin/activate    # On Windows: .venv\Scripts\activate
@@ -64,9 +69,11 @@ Some basic features are:
    Still unsure?
 
    You can list out the packages currently installed using this snippet:
+
    ```bash
    uv pip list    # Yes you can use pip commands in conjunction with uv
    ```
+
    or if you're better suited to a `requirements.txt` file, you can run
 
    ```bash
@@ -82,7 +89,9 @@ Some basic features are:
    uv python manage.py makemigrations
    uv python manage.py migrate
    ```
+
    **or**
+
    ```bash
    python manage.py makemigrations
    python manage.py migrate
