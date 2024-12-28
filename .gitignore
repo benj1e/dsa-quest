@@ -69,6 +69,8 @@ cover/
 *.mo
 
 # Django stuff:
+# Will be automatically generated when you run python manage.py makemigrations 
+migrations 
 
 # Flask stuff:
 instance/
