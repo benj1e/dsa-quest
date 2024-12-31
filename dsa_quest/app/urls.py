@@ -3,4 +3,5 @@ from .views import *
 
 urlpatterns = [
     path("", landing_page, name="landing_page"),
+    path("question/", question, name="question"),
 ]

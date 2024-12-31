@@ -1,0 +1,103 @@
+{% include "base/base.html" %} {% load static %} {% block css_file %}
+<link rel="stylesheet" href="{% static 'app/css/landing_page.css' %}" />
+{% endblock css_file %} {% block content %}
+
+<main class="h-fit flex items-center justify-center gap-[1rem] flex-col">
+    <!-- Hero -->
+    <div
+        class="h-[80dvh] w-full flex items-center justify-center gap-[1rem] flex-col rad-bg"
+    >
+        <h2 class="font-bold bg-clip-text text-6xl">
+            Get better at Leetcode the only way to, practice.
+        </h2>
+        <p class="text-lg font-normal">
+            Solve challenges, track progress, and level up your skills!
+        </p>
+        <button
+            hx-get="question/"
+            hx-target="body"
+            class="w-fit rounded-md px-4 py-2 font-bold bg-green-500 text-xl my-3 text-white"
+        >
+            Get Started
+        </button>
+        <div class="flex">
+            <a
+                href="https://github.com/benj1e/dsa-quest"
+                class="bi bi-github text-3xl"
+            ></a>
+        </div>
+    </div>
+
+    <!-- Feature Overview -->
+    <section
+        class="h-[65dvh] flex flex-col gap-4 justify-center px-[3rem] w-full"
+    >
+        <h1 class="text-5xl font-bold w-full text-center">
+            Features <i class="bi bi-stars text-yellow-500"></i>
+        </h1>
+        <div class="grid w-full grid-cols-4 gap-[1rem]">
+            <div
+                class="border items-start h-[250px] p-4 rounded-lg hover:shadow min-w-[250px]"
+            >
+                <i
+                    class="bi bi-puzzle text53xl mb-3 p-3 rounded-lg flex w-fit red"
+                ></i>
+
+                <h1 class="text-3xl my-3 font-bold">Solve challenges</h1>
+                <p class="text-lg text-slate-500 font-2">
+                    Tackle a variety of coding problems to improve your skills.
+                </p>
+            </div>
+            <div
+                class="border items-start h-[250px] p-4 rounded-lg hover:shadow min-w-[250px]"
+            >
+                <i
+                    class="bi bi-calendar-check text-3xl mb-2 p-3 rounded-lg flex w-fit blue"
+                ></i>
+                <h1 class="text-3xl my-3 font-bold">Receive daily quests</h1>
+                <p class="text-lg text-slate-500 font-2">
+                    Get new challenges every day to keep you engaged.
+                </p>
+            </div>
+            <div
+                class="border items-start h-[250px] p-4 rounded-lg hover:shadow min-w-[250px]"
+            >
+                <i
+                    class="bi bi-graph-up text-3xl mb-2 p-3 rounded-lg flex w-fit yellow"
+                ></i>
+                <h1 class="text-3xl my-3 font-bold">Track progress</h1>
+                <p class="text-lg text-slate-500 font-2">
+                    Monitor your improvement over time with detailed stats.
+                </p>
+            </div>
+            <div
+                class="border items-start h-[250px] p-4 rounded-lg hover:shadow min-w-[250px]"
+            >
+                <i
+                    class="bi bi-award text-3xl mb-2 p-3 rounded-lg flex w-fit green"
+                ></i>
+                <h1 class="text-3xl my-3 font-bold">Earn badges & level up!</h1>
+                <p class="text-lg text-slate-500 font-2">
+                    Collect badges and level up as you complete challenges.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact section -->
+    <section
+        class="h-[70dvh] w-full flex items-center justify-center gap-[1rem] flex-col rad-bg"
+    >
+        <h1 class="text-5xl font-bold w-full text-center">
+            Socials <i class="bi bi-chat-dots-fill text-blue-500"></i>
+        </h1>
+        <a
+            href="https://github.com/benj1e/dsa-quest"
+            class="border flex flex-col items-center h-[150px] p-4 rounded-lg hover:shadow min-w-[250px]"
+        >
+            <i class="bi bi-github text-4xl"></i>
+            <h1 class="text-2xl my-3">Contributions are welcome!</h1>
+        </a>
+    </section>
+</main>
+{% endblock content %}

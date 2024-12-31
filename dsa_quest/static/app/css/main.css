@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Press+Start+2P&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+@font-face {
+    font-family: imGatekeepingTsDawgBold;
+    src: url(../fonts/CooperHewitt-Bold.otf);
+}
+
+@font-face {
+    font-family: imGatekeepingTsDawgBoldItalic;
+    src: url(../fonts/CooperHewitt-BoldItalic.otf);
+}
+
+@font-face {
+    font-family: imGatekeepingTsDawg;
+    src: url(../fonts/CooperHewitt-Book.otf);
+}
+
+@font-face {
+    font-family: imGatekeepingTsDawgBoldItalic;
+    src: url(../fonts/CooperHewitt-BoldItalic.otf);
+}
+
+@font-face {
+    font-family: imGatekeepingTsDawgHeavy;
+    src: url(../fonts/CooperHewitt-Heavy.otf);
+}
+
+@font-face {
+    font-family: imGatekeepingTsDawgHeavyItalic;
+    src: url(../fonts/CooperHewitt-HeavyItalic.otf);
+}
+
+@font-face {
+    font-family: imGatekeepingTsDawgLight;
+    src: url(../fonts/CooperHewitt-Light.otf);
+}
+
+@font-face {
+    font-family: imGatekeepingTsDawgLightItalic;
+    src: url(../fonts/CooperHewitt-LightItalic.otf);
+}
+
+@font-face {
+    font-family: imGatekeepingTsDawgMedium;
+    src: url(../fonts/CooperHewitt-Medium.otf);
+}
+
+@font-face {
+    font-family: imGatekeepingTsDawgMediumItalic;
+    src: url(../fonts/CooperHewitt-MediumItalic.otf);
+}
+
+@font-face {
+    font-family: imGatekeepingTsDawgSemibold;
+    src: url(../fonts/CooperHewitt-Semibold.otf);
+}
+
+@font-face {
+    font-family: imGatekeepingTsDawgSemiboldItalic;
+    src: url(../fonts/CooperHewitt-SemiboldItalic.otf);
+}
+
+@font-face {
+    font-family: imGatekeepingTsDawgThin;
+    src: url(../fonts/CooperHewitt-Thin.otf);
+}
+
+@font-face {
+    font-family: imGatekeepingTsDawgThinItalic;
+    src: url(../fonts/CooperHewitt-ThinItalic.otf);
+}
+
+:root {
+    /* Font families */
+    --font-primary: imGatekeepingTsDawg;
+    --font-secondary: "Lato";
+    --info-cyan: #0d6efd;
+    --primary-green: #1e7e34;
+    --primary-blue: #0a58ca;
+    --danger-red: #bd2130;
+    --warning-yellow: #e0a800;
+    --background-dark: #151515;
+    --background-light: #f5f5f5;
+    --background-gray: #e3e3e3;
+    --text-color: #151515;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    line-height: 1.6em;
+    font-family: var(--font-primary), sans-serif;
+}
+
+body {
+    height: 100dvh;
+    max-width: 100dvw;
+    background-color: var(--background-light);
+    color: var(--text-color);
+}
+
+.font-bold {
+    font-family: imGatekeepingTsDawgBold;
+}
+
+.font-2 {
+    font-family: var(--font-secondary);
+}
+
+.rad-bg {
+    background: radial-gradient(circle, #ffffff, #efefef, #e0e0e0);
+}
+
+.primary-green {
+    background-color: var(--primary-green);
+    color: white;
+}
+
+.danger-red {
+    background-color: var(--danger-red);
+    color: white;
+}
+
+.warning-yellow {
+    background-color: var(--warning-yellow);
+    color: white;
+}
+.primary-blue {
+    background-color: var(--primary-blue);
+    color: white;
+}
+
+.bg-gray {
+    background-color: var(--background-gray);
+}
