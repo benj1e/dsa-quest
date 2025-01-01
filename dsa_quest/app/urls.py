@@ -3,5 +3,6 @@ from .views import *
 
 urlpatterns = [
     path("", landing_page, name="landing_page"),
-    path("question/", question, name="question"),
+    path("problem_list/", problem_list, name="problem_list"),
+    path("problem_list/<str:name>", problem_detail, name="problem_detail"),
 ]

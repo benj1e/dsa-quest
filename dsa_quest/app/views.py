@@ -8,6 +8,11 @@ def landing_page(request: HttpRequest):
     return render(request, "app/landing_page.html")
 
 
-def question(request: HttpRequest):
-    """DSA Journey: Questions view"""
-    return render(request, "app/question.html")
+def problem_list(request: HttpRequest):
+    """DSA Journey: problem_lists view"""
+    return render(request, "app/problem_list.html")
+
+
+def problem_detail(request: HttpRequest):
+    """DSA Journey: problem_list details view"""
+    return render(request, "app/problem-details.html")

@@ -1,7 +1,8 @@
 from django.db import models
-from django.contrib.auth.models import AbstractUser
-
-# Create your models here.
 
 
-# Create a custom user model that extends the AbstractUser class
+class ProblemModel(models.Model):
+    name = ... # str
+    slug = ... # slug
+    level_of_difficulty = ... # choices
+    description: ... # rich text field

@@ -1,6 +1,4 @@
-{% include "base/base.html" %} {% load static %} {% block css_file %}
-<link rel="stylesheet" href="{% static 'app/css/landing_page.css' %}" />
-{% endblock css_file %} {% block content %}
+{% include "base/base.html" %} {% block content %}
 
 <main class="h-fit flex items-center justify-center gap-[1rem] flex-col">
     <!-- Hero -->
@@ -13,13 +11,12 @@
         <p class="text-lg font-normal">
             Solve challenges, track progress, and level up your skills!
         </p>
-        <button
-            hx-get="question/"
-            hx-target="body"
+        <a
+            href='{% url "problem_list" %}'
             class="w-fit rounded-md px-4 py-2 font-bold bg-green-500 text-xl my-3 text-white"
         >
             Get Started
-        </button>
+        </a>
         <div class="flex">
             <a
                 href="https://github.com/benj1e/dsa-quest"
